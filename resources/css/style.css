@@ -1,0 +1,892 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+a,
+button,
+p,
+video,
+iframe,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(260deg, #c2c2c2, #dfbb91, #f4a261);
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+/*header nav */
+header .navbar {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+}
+
+.navbar-toggler {
+    border: 1px solid #000000;
+}
+
+.navbar-toggler-icon {
+    background: #000;
+    border-radius: 50%;
+}
+
+header nav ul li a.nav-link {
+    color: #393838;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: .5rem 1.5rem !important;
+}
+
+header nav ul li a.nav-link.active {
+    color: #F86900;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header nav ul li a.nav-link:hover {
+    color: #F86900;
+}
+
+header nav ul li a.nav-link.whattsapp {
+    font-weight: 500;
+}
+
+header nav ul li.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+section.hero {
+    padding: 200px 0 100px;
+}
+
+section.hero h1 {
+    color: #FCF9F7;
+    font-family: Poppins;
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 83.2px;
+    /* 130% */
+}
+
+section.hero p {
+    color: #393838;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+    /* 160% */
+    padding-top: 30px;
+    padding-bottom: 17px;
+}
+
+section.hero button {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    border: none;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    font-weight: 600 !important;
+    padding: 15px 25px !important;
+    border-radius: 30px !important;
+}
+
+section.hero button.btn-primary {
+    background: #F86900;
+    margin-right: 24px;
+}
+
+section.hero button.btn-secondary {
+    background: #FFF;
+    color: #F86900;
+}
+
+section.hero button.btn-primary:hover {
+    color: #F86900;
+    background: #fff;
+}
+
+section.hero button.btn-secondary:hover {
+    background: #F86900;
+    color: #fff;
+}
+
+section.hero .food-plate {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    max-width: 500px;
+    animation: spin 10s linear infinite;
+}
+
+/* animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* menu section */
+.menu-section h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    padding-bottom: 35px;
+}
+
+.category-buttons button.active {
+    background: #F86900 !important;
+    color: #FFF !important;
+    border-color: #007bff;
+}
+
+section.menu-section .category-buttons button {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38.4px;
+    /* 192% */
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #FFF;
+    border: 0;
+}
+
+section.menu-section .category-buttons button:first-child img {
+    filter: invert(100%);
+}
+
+section.menu-section .category-buttons button:first-child.active img {
+    filter: invert(0) !important;
+}
+
+section.menu-section .category-buttons button.active img {
+    filter: invert(100%);
+}
+
+section.menu-section .category-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+section.menu-section .owl-carousel .item {
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+section.menu-section .item {
+    border-radius: 28.05px;
+    border: 2.805px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(20.476661682128906px);
+    padding: 0 30px 30px;
+    height: 300px;
+}
+
+section.menu-section .owl-item {
+    margin-top: 75px;
+}
+
+section.menu-section .owl-carousel .item img {
+    animation: spin 10s linear infinite;
+    margin-top: -75px;
+    width: 160px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+section.menu-section .owl-carousel .item:hover img {
+    animation-play-state: paused;
+    transition: transform 0.3s ease, animation-play-state 0s;
+}
+
+section.menu-section .item h3 {
+    color: #393838;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35.904px;
+    /* 160% */
+}
+
+section.menu-section .item p {
+    color: #7E7878;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23.936px;
+    /* 160% */
+}
+
+section.menu-section .rating {
+    color: #F86900;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43.936px;
+    /* 128% */
+}
+
+section.menu-section .tab-content {
+    padding: 20px 0;
+}
+
+section.menu-section .owl-carousel .item:hover {
+    transform: scale(1);
+    z-index: 10;
+}
+
+section.menu-section .tab-pane {
+    padding: 20px 0;
+}
+
+section.menu-section .owl-carousel .item {
+    width: 100%;
+    transform: scale(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* about section */
+section.about {}
+
+section.about h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.92px;
+}
+
+section.about p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+}
+
+section.about p strong {
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+section.about .content {
+    display: flex;
+    align-items: center;
+}
+
+/* mobile section */
+section.mobile {
+    margin-top: 160px;
+    margin-bottom: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 50px;
+    background: rgba(0, 136, 0, 0.60);
+}
+
+section.mobile h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38.4px;
+    /* 106.667% */
+}
+
+section.mobile h2 span {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 38.4px;
+}
+
+section.mobile p {
+    color: #E6E6E6;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    /* 180% */
+    letter-spacing: 0.64px;
+    padding-top: 10px;
+}
+
+section.mobile .links {
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+section.mobile .right-sec {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.mobile .right-sec img {
+    position: absolute;
+    bottom: 0;
+}
+
+/* franchise section*/
+section.franchise {}
+
+section.franchise .owl-carousel {
+    width: 95%;
+    float: right;
+}
+
+section.franchise .owl-carousel .owl-stage-outer {
+    width: 95%;
+    float: right;
+}
+
+section.franchise h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+    /* 80% */
+    letter-spacing: 1.92px;
+    padding: 0 15px 45px;
+}
+
+section.franchise .franchise-carousel .franchise-card {
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 62.4%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* width: 350px; */
+    /* height: 350px; */
+}
+
+section.franchise .franchise-carousel .franchise-card:hover {
+    transform: scale(0.99);
+}
+
+/* section.franchise .franchise-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+} */
+
+section.franchise .franchise-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.6); */
+    color: #fff;
+    padding: 10px 15px;
+}
+
+section.franchise .franchise-info h3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38.4px;
+    /* 192% */
+    letter-spacing: 0.8px;
+}
+
+section.franchise .franchise-info p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 274.286% */
+    letter-spacing: 0.56px;
+}
+
+section.franchise .bookmark-icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem;
+    filter: drop-shadow(0 0 2px #fff);
+}
+
+/* form section */
+section.form-section .container .row {
+    padding: 80px 0 80px;
+}
+
+section.form-section form {
+    border-radius: 32.535px;
+    border: 0.651px solid #FFF;
+    padding: 30px;
+}
+
+.form-section h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    padding-bottom: 10px;
+}
+
+.form-section p {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.4px;
+    /* 160% */
+    letter-spacing: 0.72px;
+    padding-bottom: 30px;
+}
+
+.form-section p strong {
+    font-family: Salsa;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.form-section form .form-label {
+    color: #FFF;
+    font-family: Salsa;
+    font-size: 14.301px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.572px;
+}
+
+.form-section form .form-control {
+    border-radius: 35.754px;
+    border: 1.073px solid #FFF;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 10.011px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    background: transparent;
+}
+
+.form-section form .btn-primary {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 11.324px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.742px;
+    /* 192% */
+    letter-spacing: 0.453px;
+    border-radius: 28.31px;
+    background: #F86900;
+    border: 0;
+}
+
+.form-section form .btn-primary:hover {
+    background: green;
+}
+
+.form-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* footer */
+footer {
+    padding: 50px 20px;
+    border-radius: 50px 50px 0px 0px;
+    border: 2.805px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(20.476661682128906px);
+}
+
+footer .footer-logo {
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+footer .footer-about p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15.051px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.1px;
+    /* 160.12% */
+    letter-spacing: 0.753px;
+}
+
+footer .footer-about p strong {
+    font-family: Salsa;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .footer-links-wrapper {
+    margin-top: 30px;
+}
+
+footer .footer-links-wrapper h6 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 0;
+}
+
+footer h6 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 35px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-links ul li a {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+footer .footer-links ul li a:hover {
+    color: #f4a261;
+}
+
+footer .footer-contact p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer .footer-contact p a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f4a261;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+footer .footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+footer .footer-contact {
+    display: flex;
+    align-content: center;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 1919px) {}
+
+@media only screen and (max-width: 1399px) {
+
+    section.hero h1 {
+        font-size: 58px;
+        line-height: 78.2px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+
+    section.franchise h2 {
+        font-size: 40px;
+    }
+
+    section.franchise .owl-carousel {
+        width: 100%;
+        float: unset;
+        padding: 0 30px;
+    }
+
+    section.franchise .owl-carousel .owl-stage-outer {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    header nav ul li a.nav-link.active {
+        font-size: 19px;
+    }
+
+    header nav ul li a.nav-link {
+        font-size: 15px;
+    }
+
+    section.hero .food-plate {
+        max-width: 400px;
+    }
+
+    section.hero h1 {
+        font-size: 47px;
+        line-height: 63.2px;
+    }
+
+    section.hero p {
+        font-size: 20px;
+        line-height: 30.4px;
+    }
+
+    section.hero .food-plate {
+        bottom: 10%;
+        /* width: 40%; */
+    }
+
+    section.hero .food-plate {
+        position: relative;
+    }
+
+    section.menu-section .category-buttons button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    section.about .img {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    section.mobile {
+        margin-top: 80px;
+        padding-bottom: 0;
+    }
+
+    section.mobile .right-sec img {
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    section.hero {
+        padding: 100px 15px;
+    }
+
+    section.hero .food-plate {
+        display: block;
+    }
+
+    section.hero button {
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    section.menu-section h1 {
+        font-size: 36px;
+    }
+
+    section.category-buttons button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    section.menu-section .category-buttons button {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+
+    section.menu-section .category-buttons button img {
+        width: 20px;
+    }
+
+    section.category-buttons {
+        flex-direction: column;
+    }
+
+    section.about p {
+        font-size: 20px;
+    }
+
+    section.about p strong {
+        font-size: 22px;
+    }
+
+    section.menu-section .category-buttons {
+        flex-direction: column;
+    }
+
+    section.form-section .row {
+        flex-direction: column;
+    }
+
+    section.form-section h2 {
+        font-size: 2rem;
+    }
+
+    section.form-section p {
+        font-size: 0.9rem;
+    }
+
+    section.form-section p strong {
+        font-size: 20px;
+    }
+
+    section.form-section form {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .row {
+        flex-direction: column;
+    }
+
+    footer .footer-about,
+    footer .footer-links,
+    footer .footer-contact {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 552px) {
+
+    section.hero h1 {
+        font-size: 40px;
+        line-height: 53.2px;
+    }
+
+    section.hero p {
+        font-size: 14px;
+        line-height: 26.4px;
+    }
+
+    section.franchise h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    section.hero .food-plate {
+        max-width: 200px;
+        bottom: 20%;
+    }
+
+    section.menu-section h1 {
+        font-size: 28px;
+    }
+}
