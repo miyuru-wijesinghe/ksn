@@ -533,7 +533,7 @@ section.form-section form {
     border: 1.073px solid #FFF;
     color: #000000;
     font-family: Poppins;
-    font-size: 10.011px;
+    font-size: 12.011px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -760,6 +760,11 @@ footer .footer-contact {
     section.about .img {
         display: flex;
         justify-content: center;
+    }
+
+    header .navbar {
+        backdrop-filter: blur(250px);
+        -webkit-backdrop-filter: blur(250px);
     }
 
 }
