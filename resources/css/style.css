@@ -23,7 +23,7 @@ img {
 }
 
 body {
-    background: linear-gradient(260deg, #c2c2c2, #dfbb91, #f4a261);
+    background: linear-gradient(5deg, #bca488, #dfcdb9, #f1c4a1);
 }
 
 @media (min-width: 1400px) {
